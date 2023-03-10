@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/roll"
+        android:layout_gravity="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/musicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/black"
+        android:text="MUSIC NAME"
+        android:textSize="24sp"
+        tools:textStyle="bold" />
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/prev"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="586dp" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_play_arrow_24"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="586dp" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="586dp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
